@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textSize="40sp"/>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:textSize="40sp"
+        android:inputType="textPersonName"
+        android:layout_toRightOf="@+id/username"
+        />
+
+
+    <TextView
+        android:id="@+id/uspassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码"
+        android:textSize="40sp"
+        android:layout_below="@id/user_name"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:cursorVisible="false"
+        android:layout_toRightOf="@id/uspassword"
+        android:layout_alignBottom="@id/uspassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/uspassword"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="登陆"
+            android:textSize="20sp"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:id="@+id/btn_regster"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="注册"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
